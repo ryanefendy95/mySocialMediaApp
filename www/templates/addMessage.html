@@ -1,0 +1,17 @@
+<ion-modal-view>
+  <ion-header-bar class="bar-assertive">
+    <h1 class="title">Add Message</h1>
+    <div class="buttons">
+      <button class="button button-icon icon ion-close" ng-click="closeModal()"></button>
+    </div>
+  </ion-header-bar>
+  <ion-content>
+    <div class="list">
+      <label class="item-input">
+        <textarea rows="10" placeholder="What's up?" ng-model="tweet.message"></textarea>
+      </label>
+      {{(tweet.message.length + tweet.message.count(" ")) || 0}}/140
+      <button class="button button-full button-assertive" ng-click="submitMessage()">Post</button>
+    </div>
+  </ion-content>
+</ion-modal-view>

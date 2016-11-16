@@ -1,0 +1,105 @@
+<ion-view title="Profile">
+<div class="bar bar-header bar-danger">
+  <button class="button button-icon"><i class="icon-person-add"></i></button>
+  <h1 class="title">Me</h1>
+  <button class="button button-icon"><i class="icon-gear-b"></i></button>
+</div>
+
+<ion-content has-header="true">
+  <div id="profile-bg"></div>
+  <div id="content">
+    <div id="profile-info">
+      <img id="profile-image" src="https://pbs.twimg.com/profile_images/748603714705952768/-8HcqbKS.jpg">
+      <h3 id="profile-name">LeBron James</h3>
+      <span id="profile-description">EST. AKRON - ST.V/M Class of '03 http://LeBronJamesFamilyFoundation.org #IPROMISE
+            <a href="https://twitter.com/KingJames">@KingJames</a></span>
+    </div>
+    <ion-list>
+      <ion-item ng-repeat="post in posts">
+        <img class="post-profile-image" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/94311/me.png">
+        {{post.text}}
+        <div class="post-time">{{post.created_at | relativets }}</div>
+        <div class="post-options">
+          <i class="icon-reply"></i>
+          <i class="icon-shuffle"></i>
+        </div>
+      </ion-item>
+    </ion-list>
+  </div>
+  <div class="button-bar">
+    <a href="" class="button">Pray</a>
+    <!--<a href="" class="button">Ours</a>-->
+    <a href="" class="button">Worship</a>
+  </div>
+</ion-view>
+
+
+
+  <ion-list>
+    <ion-item ng-repeat="post in posts">
+      <img class="post-profile-image" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/94311/me.png">
+      {{post.text}}
+      <!--<div class="post-time">{{post.created_at | relativets }}</div>-->
+      <h1>Test Post</h1>
+      <div class="post-options">
+        <i class="icon-reply"></i>
+        <i class="icon-shuffle"></i>
+      </div>
+    </ion-item>
+  </ion-list>
+  </div>
+</ion-content>
+
+<!--<ion-view title="Profile">-->
+
+  <!--<ion-nav-buttons side="left">-->
+    <!--<button menu-toggle="left" class="button button-icon icon ion-navicon"></button>-->
+  <!--</ion-nav-buttons>-->
+
+  <!--<ion-content has-header="true" padding="true">-->
+
+    <!--<div class="list card">-->
+      <!--<div class="item">-->
+        <!--&lt;!&ndash;<h2>{{user.name}}</h2>&ndash;&gt;-->
+        <!--&lt;!&ndash;<p>{{user.email}}</p>&ndash;&gt;-->
+        <!--<h2>Ryan Efendy</h2>-->
+        <!--<p>re88@drexel.edu</p>-->
+      <!--</div>-->
+      <!--<div class="item item-image">-->
+        <!--&lt;!&ndash;<img ng-src="https://graph.facebook.com/{{ user.id }}/picture?width=400&height=400" />&ndash;&gt;-->
+        <!--<img src="http://lorempixel.com/400/200/sports/2/">-->
+      <!--</div>-->
+    <!--</div>-->
+
+  <!--</ion-content>-->
+
+<!--</ion-view>-->
+
+<!--<ion-view title="Profile" ng-init="init()">-->
+  <!--<ion-content style="background-color:gray">-->
+    <!--<div class="list card">-->
+      <!--<img src="http://lorempixel.com/400/200/sports/2/">-->
+      <!--<div class="item item-avatar">-->
+        <!--<img ng-src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/At_Sign_Nimbus.svg/500px-At_Sign_Nimbus.svg.png" style="border-radius:50%">-->
+        <!--<h2>Ryan Efendy</h2>-->
+        <!--<p>@ryan</p>-->
+      <!--</div>-->
+      <!--<a href="" class="item item-icon-left">-->
+        <!--<i class="icon ion-person-stalker"></i>-->
+        <!--Male-->
+      <!--</a>-->
+      <!--<a href="" class="item item-icon-left">-->
+        <!--<i class="icon ion-home"></i>-->
+        <!--3141 Chestnut St, Philadelphia, PA 19104-->
+      <!--</a>-->
+      <!--<a href="" class="item item-icon-left">-->
+        <!--<i class="icon ion-ios-telephone"></i>-->
+        <!--(215) 895-2000-->
+      <!--</a>-->
+      <!--<a href="" class="item item-icon-left">-->
+        <!--<i class="icon ion-person-add"></i>-->
+        <!--Add Me-->
+      <!--</a>-->
+    <!--</div>-->
+  <!--</ion-content>-->
+<!--</ion-view>-->
